@@ -1,0 +1,33 @@
+This project started out because I was pissed at the Hungarian government's data base, so I said f*ck it I'm going to
+    make a better one on my own, as a proof of concept that a functional data base regarding every information about
+        Hungarian citizen's could be made by (at the time) a 20 year old dude, who "learned" python under 2 months,
+        whose teacher was not familiar with python. (Due to this my codes are not really pythonic, and are anything but
+         efficient). So take that Viktor!
+
+Originally everything was in the -proof_of_concept.py- file but a friend of mine whose day job is making software,
+suggested that I split it to different files to make it more efficient and readable so that's what I've done.
+
+Here in Hungary people have 2 lists of first names to choose from when naming their new born one if the kid is going to
+    be a boy and another if they going to be a girl (yeah, legally there are only 2 sexes here, no option to change
+    yours (as far as I know))
+So I used those lists as a starting point for random names, sadly I couldn't find a decent list of surnames so I tried to
+use all the surnames I could gather to generate "real people". That however is not remotely accurate, which comes form
+the fact that some surnames can be found more wildly than others such as Nagy, Kovács and Tóth, the 3 most 'popular'
+surnames, with 242, 226 and 221 thousand people owning a name starting with (here in hungary we say our surnames 1st)
+one of these. Need I remind you that there are a grand total of 10 million permanent resident in this country?  My method
+of selecting these surnames is inherently flawed. Because it contributes equal amount of chance to each name, even those
+that are rarely found, this produces "people" with extremely rare surnames and first names, because I use the same
+method to create them. My current planed solution is simpl and inefficient, I just put Nagy in the pool 242 000 times.
+Currently that pool has about 32 000 surnames in it, that's more Nagy people than the entire list, just the 8 most used
+names would be 1 and a half million entries, I repeat, JUST THE FIRST 8 MOST POPULAR SURNAMES WOULD RESULT IN MORE THAN
+A MILLION LINES OF TEXT. So that's not really a long term option if I ever want a semi efficient program/database
+
+
+Then via a quick Google search I found out that the oldest person in Hungary was born in 1910 and died in 2021
+(or 2020 I'm not quite sure) so I used that that as one limit the other limit being the actual date, I might upgrade
+this by adding 9 months to the actual date, so that there could be records of babies not yet born. I know that everyone
+is against collecting data, but if we do it might as well do it properly, nevertheless this project isn't really about
+collecting data, it's about simulating a functional data base with random details, but that since my major is security
+engineering I'm going to try and make it as secure as possible, using some form of encryption.
+
+At some point I'd like to move the database part to SQL or maybe PHP to make myself familiar with those as well,
