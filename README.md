@@ -1,6 +1,6 @@
 # Hungary-moves-forward
-Most stuff is self-explanatory but I am going to give a quick rundown of everything here.
-  However, if you're interested in how this project came to be you can read the XYZ file where I explain the idea and history behind it, and other things in detail. 
+Most stuff is self-explanatory but I'll give a quick rundown of everything here.
+  But, if you're interested in how this project came to be, you can read the XYZ file in which I explain the idea and history behind this whole ass project, and other things in detail. 
 
 proof_of_concept.py:
   the module to run, the heart of the operations
@@ -16,3 +16,6 @@ bank_stuff.py:
 
 size.py:
   the brains of the operation, you set the sample size in this module
+
+test.py & test2.py:
+  contain stuff that I've yet to use, or tried to use
