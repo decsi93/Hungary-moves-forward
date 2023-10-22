@@ -4,7 +4,12 @@ Hungarian citizen's could be made by (at the time) a 20 year old dude with prett
 So take that Viktor!
 
 Originally everything was in the -proof_of_concept.py- file but a friend of mine suggested that I split it to 
-different files to make it more efficient and readable.
+different files to make it more efficient and readable. I want to emphatize that this project is not about collecting data,
+it's about making a functional data base with simulated data. 
+Since I'm majoring in security engineering I am planing to make it as secure as possible, but still usable, 
+resorting to all sort of tricks, and at some point I'd like to move the database part
+to SQL or maybe PHP to make myself familiar with those as well, but this part doesn't even exists yet, so there is work to do.
+
 
 names.py:
 Here in Hungary people have 2 lists of first names to choose from when naming their new born one if the kid is going to 
@@ -26,12 +31,6 @@ My current idea is to use dictonaries that contain how many times -XYZ- surnames
 make this.
 
 date_of_births.py:
-The idea was the same here, randomly creat
-Then via a quick Google search I found out that the oldest person in Hungary was born in 1910 and died in 2021
-(or 2020 I'm not quite sure) so I used that that as one limit the other limit being the actual date, I might upgrade
-this by adding 9 months to the actual date, so that there could be records of babies not yet born. I know that everyone
-is against collecting data, but if we do it might as well do it properly, nevertheless this project isn't really about
-collecting data, it's about simulating a functional data base with random details, but that since my major is security
-engineering I'm going to try and make it as secure as possible, using some form of encryption.
-
-At some point I'd like to move the database part to SQL or maybe PHP to make myself familiar with those as well,
+The idea was the same here, randomly creat birth dates, with a quick Google search I found out that the oldest Hungarian person
+in Hungary was born in 1908 so I used that as the limit on one side of the spectrum the other being the actual date,
+I might upgrade this by adding 9 months to the actual date, so that there could be records of babies not yet born. 
