@@ -1,36 +1,36 @@
 This project started out because I was pissed at the Hungarian government's data base, so I said f*ck it I'm going to
     make a better one on my own, as a proof of concept that a functional data base regarding every information about
-Hungarian citizen's could be made by (at the time) a 20 year old dude with pretty basic laptop, and a none existen budge.
+Hungarian citizen's, could be made by (at the time) a 20 year old dude with pretty basic laptop and a none existen budge.
 So take that Viktor!
 
-Originally everything was in the -proof_of_concept.py- file but a friend of mine suggested that I split it to 
-different files to make it more efficient and readable. I want to emphatize that this project is not about collecting data,
-it's about making a functional data base with simulated data. 
-Since I'm majoring in security engineering I am planing to make it as secure as possible, but still usable, 
-resorting to all sort of tricks, and at some point I'd like to move the database part
-to SQL or maybe PHP to make myself familiar with those as well, but this part doesn't even exists yet, so there is work to do.
+Originally, everything was in the -proof_of_concept.py- file, but a friend suggested that I split it to 
+different files to make it more efficient and readable. I want to emphatize that this project is not about collecting data.
+It's about making a functional data base with simulated data. 
+Since I'm majoring in security engineering I'm planing to make it as secure as possible, but still usable, 
+resorting to all sort of tricks, and at some point I'd like to move the -database- part
+to SQL or maybe PHP to make myself familiar with those languages as well, but that part doesn't even exist yet, so there is still work to do.
 
 
 names.py:
-Here in Hungary people have 2 lists of first names to choose from when naming their new born one if the kid is going to 
-be a boy and another if they going to be a girl (yeah, legally there are only 2 sexes here, no option to change yours
+Here in Hungary people have 2 lists of first names to choose from when naming their new born one, if the kid is going to 
+be a boy and another if she is going to be a she (yeah, legally there are only 2 sexes here, no option to change yours
 (as far as I know)). 
 
-So I used those lists as a starting point for random names, sadly I couldn't find a decent list of surnames so I tried to
+So I used these lists as a starting point for random names, however, I couldn't find THE list of surnames so I tried to
 use all the surnames I could gather to generate "real people". 
-That however is not remotely accurate, which comes form the fact that some surnames can be found more wildly than others such
-as 'Nagy', 'Kovács' and 'Tóth', the 3 most 'popular' ones, with 242, 226 and 221 thousand people having a name starting with
-(here in hungary surnames comes first than your first name(s)) one of these.
+But this does not mirror reality, in fact, it is inherently flawed, which comes form the fact that some surnames can be found more wildly than others such 
+names are  'Nagy', 'Kovács' and 'Tóth', the 3 most 'popular' ones, with 242, 226 and 221 thousand people having a name starting with one of these
+(here in Hungary surnames come first than your first name(s)).
 
 There are a grand total of 10 million permanent resident in this country. My current planed solution is simple and 
-inefficient, I just put 'Nagy' in the pool 242 000 times. Currently that pool has about 32 000 surnames in it,
+inefficient, I'll just put 'Nagy' in the pool 242 000 times.  However, currently that pool has about 32 000 surnames in it,
 that means there would be more 'Nagy' people than the entire current list, just the 8 most used names would be 1 and a 
 half million entries, I repeat, JUST THE FIRST 8 MOST POPULAR SURNAMES WOULD RESULT IN MORE THAN A MILLION LINES OF TEXT.
 So that's not really a long term option if I ever want a semi efficient program/database.
-My current idea is to use dictonaries that contain how many times -XYZ- surnames there are, the only problem is, I have no idea how to
-make this.
+My current idea is to use dictonaries that contain how many times -XYZ- surnames there are. The only problem is, I have no idea how to
+make this one.
 
 date_of_births.py:
 The idea was the same here, randomly creat birth dates, with a quick Google search I found out that the oldest Hungarian person
 in Hungary was born in 1908 so I used that as the limit on one side of the spectrum the other being the actual date,
-I might upgrade this by adding 9 months to the actual date, so that there could be records of babies not yet born. 
+I might upgrade this by adding 9 months to the actual date so, there could be records of babies not yet born.
