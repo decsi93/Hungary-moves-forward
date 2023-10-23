@@ -1,6 +1,6 @@
 # Hungary-moves-forward
 Most stuff is self-explanatory but I'll give a quick rundown of everything here.
-  But, if you're interested in how this project came to be, you can read the XYZ file in which I explain the idea and history behind this whole ass project, and other things in detail. 
+  But, if you're interested in how this project came to be, you can read the -optional read me- in which I explain the idea and history behind this whole ass project, and other things in detail. 
 
 proof_of_concept.py:
   the module to run, the heart of the operations
